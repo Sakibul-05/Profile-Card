@@ -1,0 +1,130 @@
+ /* ======Universal Selector====== */
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+ }
+ 
+
+ /* ====== Element Selector ====== */
+ body{
+    background:radial-gradient(  #fbda61, #ff5acd);
+    display: flex;                                              /* display flex property is used to make html element in horizontal */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+ }
+
+
+ /* ======== Class Selector ======= */
+ .card{
+    /* border: 2px solid black; */
+    box-shadow: 0 35px 80px rgb(0, 0, 0, 0.15);
+    background: white;
+    width: 400px;
+    height: 260px;
+    position: relative;
+    border-radius: 20px;
+    transition: 0.5s;
+    overflow: hidden;
+    
+ }
+
+
+ /* ======== hover effect added ======== */
+ .card:hover{
+    height: 430px;
+    overflow: none;
+ }
+
+
+ /* =========== Class Selector =========== */
+  .imgbx{
+    /* border: 2px solid red; */
+    width: fit-content;
+    height: 180px;
+    margin: auto; 
+    border-radius: 0px 0px 20px 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     
+  }
+   
+
+  /* ========== Class Selector ========= */
+  .content{
+    /* border: 1px solid blue; */
+   margin-top: 15px;
+  }
+  h2{
+     text-align: center;
+     font-weight: 600;
+     
+  }
+
+  /* ======= descendant selector ======== */
+  .content h2 span{
+    font-size: 17px;
+    font-weight: 500;
+    opacity: 0.5;
+    
+  }
+
+
+  /* ========= Class Selector =========== */
+  .info{ 
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around !important;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px !important;
+    
+  }
+
+
+  /* ========= Child Selector ========= */
+  .card >.info> h3{
+    text-align: center;
+    font-weight: 600;
+  }
+
+
+  /* ========== Descendant Selector =========== */
+  .card .info h3 span{
+    font-weight: 400;
+    opacity: 0.5;
+  }
+
+
+  /* ========== Descendant Selector =========== */
+  .card .btn{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around !important;
+    gap: 20px; 
+    
+  }
+
+
+  /* ========== Descendant Selector =========== */
+  .card .btn button{
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    background: rgb(255, 122, 144);
+    color: white;
+    cursor: pointer;
+  }
+
+
+  /* ======= Here target child 2 of button element ======== */
+  .card .btn button:nth-child(2){
+    border: 1px solid rgb(153, 153, 153);
+    color: rgb(153, 153, 153) ;
+    background: white;
+  }
